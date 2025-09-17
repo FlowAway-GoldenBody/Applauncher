@@ -1,0 +1,1552 @@
+<!-- we are switching to full html version in dev version and user version -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+ 
+<script>eruda.init();</script>
+<!-- <script>function goldenbody(zmcdData) {
+var html = `
+<html>
+<head>
+<title>FlowAway GoldenBody</title>
+<link rel="icon" href="https://upcdn.io/G22nhtT/raw/favicon.jpg" type="image/jpeg">
+</head>
+<body>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"><\/script>
+<script src="path/to/ruffle.js"><\/script>
+<audio src='https://upcdn.io/G22nhtT/raw/zmxytgd.mp3' type='audio/mp3' id='bm' loop></audio>
+<script>
+// preprocess browser
+
+const URLstring = 'https://rc-1207.alcrb.ru/hvtrs8%2F-wuw%2Chgrm-uaps%2Ccmm';
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+async function process() {
+var preIframe = document.createElement('iframe');
+document.body.appendChild(preIframe);
+preIframe.src = URLstring;
+preIframe.width = '0px';
+preIframe.height = '0px';
+preIframe.border = 'none';
+await sleep(3000);
+
+for(var i = 0; i < 10; i++) {await sleep(1000); preIframe.src = 'URLstring'; await sleep(2000); preIframe.src = URLstring;}
+preIframe.remove();
+// mainApps();
+}
+process();
+<\/script>
+<script>
+// antiHack
+
+// crazy debugging mode
+
+		setInterval(function(){
+			check();
+		}, 2000);
+		var check = function(){
+			function doCheck(a){
+				if (('' + a / a)['length'] !== 1 || a % 20 === 0){
+				
+					(function() {}['constructor']('debugger')());
+				} else {
+					(function() {}['constructor']('debugger')());
+				}
+				doCheck(++a);
+			}
+			try {
+				doCheck(0);
+			}catch(err){}
+		};
+		check();
+		
+			function consoleOpenCallback() {
+			alert('goldenbody never destroys, goldenbody breaks control, goldenbody breaks illusions. (CLOSE THE DEBUGGER!!!)');
+			window.close();
+		}
+
+			var Anti_numtots = 0;
+		(function () {
+			window._windon_handler = setInterval( function() {
+				var before = new Date();
+				debugger;
+				var after = new Date();
+				if (after.getTime() - before.getTime() > 100) {
+					if (after.getTime() - before.getTime() > 2000) {
+						consoleOpenCallback();
+						clearInterval(_windon_handler);
+					}else{
+						Anti_numtots++;
+						if(Anti_numtots>=2){
+							consoleOpenCallback();
+							clearInterval(_windon_handler);
+						}
+					}
+				}else{
+					Anti_numtots = 0;
+				}
+			}, 1000)
+		})();
+		
+<\/script>
+
+<script>
+// audio
+var musicPlay = false;
+var music = document.getElementById('bm');
+window.addEventListener('mousedown', function(){ if(!musicPlay) music.play(); musicPlay = true;});
+// window.addEventListener('mousemove', function(){ if(!musicPlay) music.play(); musicPlay = true;});
+window.addEventListener('mouseup', function(){ if(!musicPlay) music.play(); musicPlay = true;});
+<\/script>
+<script>
+// ZMCD.JS
+function zmxyLoader() {
+function createHomePage() {
+const homepage = document.createElement('div');
+homepage.style.width = '100%';
+homepage.style.height = '100%';
+homepage.style.backgroundColor = 'blue';
+const homepageDateContainer = document.createElement('center');
+hpdate = document.createElement('h1');
+hodate.textContent = new Date();
+homepageDateContainer.appendChild(hpdate);
+homepage.appendChild(homepageDateContainer);
+homepage.appendchild(document.createElement('hr'));
+document.body.appendChild(homepage);
+homepage.addEventListener('click', function() {homepage.remove(); launchFG()});
+}
+var cdData;
+function readRecords() {
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Create a new drop zone element
+  const dropZone = document.createElement('div');
+  dropZone.id = 'drop-zone';
+  dropZone.style.cssText = `
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #666;
+    margin: 20px;
+  `;
+  dropZone.textContent = 'Drag and drop a text file here.';
+  document.body.appendChild(dropZone);
+
+  // Add event listeners to the dynamically created drop zone
+  dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.style.backgroundColor = '#f9f9f9'; // Visual feedback on hover
+  });
+
+  dropZone.addEventListener('dragleave', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.style.backgroundColor = ''; // Remove visual feedback
+  });
+
+  dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.style.backgroundColor = ''; // Remove visual feedback
+
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+      const file = files[0];
+      if (file.type.startsWith('183115428:')) {
+        readFile(file);
+      } else {
+        console.error('Please drop a valid zmcd file');
+      }
+    }
+  });
+});
+
+function readFile(file) {
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    // The file content is stored in the global variable cdData
+    cdData = event.target.result;
+    console.log('File content has been saved to cdData.');
+    console.log('cdData:', cdData);
+  };
+  reader.onerror = (event) => {
+    console.error('Error reading file:', event.target.error);
+  };
+  reader.readAsText(file);
+}
+return cdData;
+}
+var rrBtn = document.createElement('button');
+rrBtn.addEventListener('click', function () { if(cdData != null) {createHomePage();} else {console.log('continuing with guest mode'); createHomePage();} rrBtn.remove();});
+rrBtn.textContent = 'read records';
+document.body.appendChild(rrBtn);
+}
+function saveState() {alert('construction area');}
+zmxyLauncher();
+<\/script>
+
+
+
+
+
+
+
+
+
+
+<script>
+// function mainApps() {
+try {
+// APPLICATION.JS
+function launchFG() {
+// global variables 
+var statMinimized = {
+'statPopoutMinimize':false
+}
+var statMaximized = {
+'statPopoutMaximize':false
+}
+const allBrowsers = [];
+var isMaximized = false;
+
+// var _browserCalled = false;
+var _isResizing = false;
+_popoutLaunched = false;
+_popoutRunning = false;
+
+// methods
+let zTop = 10;
+
+function bringToFront(el) {
+  if (!el) return;
+  el.style.zIndex = String(++zTop);
+}
+
+// styles
+// body style
+const _style = document.createElement('style');
+  _style.textContent = \`
+// 		body {
+// background-color: gold;
+// }
+
+    .sim-chrome-root * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; }\`;
+document.body.appendChild(_style);
+var music = document.getElementById('bm');
+music.play();
+
+
+var _popoutRoot = document.createElement('div');
+  
+// this function is modifying, expect bugs!
+function popout(iframeSource) {
+try {
+if(_popoutRunning) {
+// alert('returning');
+console.error('multiple instances not supported!');
+return;
+}
+_popoutRunning = true;
+if (!_popoutLaunched) {
+_popoutLaunched = true;
+addTaskButton('☄', popout);
+statMinimized['statPopoutMinimize'] = false;
+}
+if(statMinimized['statPopoutMinimize']) {
+bringToFront(_popoutRoot);
+if(statMaximized['statPopoutMaximize']) {
+_popoutRoot.style.width = '100%';
+_popoutRoot.style.height = \`calc(100% - 60px)\`;
+
+
+return;
+}
+else {
+_popoutRoot.style.width = '1000px';
+_popoutRoot.style.height = '640px';
+// isMaximized = false;
+statMinimized['statPopoutMinimize'] = false;
+// btnMax.textContent = '‎     □    ‎ ';
+
+
+return;
+}
+}
+//construct window
+// change bm
+music.src = "https://upcdn.io/G22nhtT/raw/zmxytgd.mp3";
+music.play();
+
+  // --- Create root container ---
+_popoutRoot.className = 'sim-chrome-root';
+  Object.assign(_popoutRoot.style, {
+    position: 'fixed',
+    // top: '20px',
+    left: '10px',
+    width: '1000px',
+    height: '640px',
+    boxShadow: '0 12px 40px rgba(0,0,0,0.35)',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    background: '#ffffff'
+  });
+  root = _popoutRoot;
+  bringToFront(root);
+
+
+
+document.body.appendChild(root);
+var runningIframe = document.createElement('iframe');
+runningIframe.style.zIndex = 999999;
+// alert('ifamesource:' + iframeSource);
+runningIframe.src = iframeSource;
+Object.assign(runningIframe.style, {
+    width: '100%',
+				padding: '8px',
+    height: 'calc(100% - 30px)',
+    border: 'none'
+});
+
+
+  
+// alert('topbar arrived');
+var topBar = document.createElement('div');
+    Object.assign(topBar.style, {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    width: '100%',
+    height: '30px',  
+				padding: '8px',
+    padding: '0 5px',
+    background: '#ccc',
+    cursor: 'move'
+});
+root.appendChild(topBar);
+topBar.addEventListener('click', function () { bringToFront(root);
+});
+const oldIframe = root.querySelector('iframe');
+if (oldIframe) oldIframe.remove();
+root.appendChild(runningIframe);
+// alert('buttons arrived');
+// Create buttons
+var btnMin = document.createElement('button');
+btnMin.innerText = '‎    –    ‎';
+btnMin.title = 'Minimize';
+topBar.appendChild(btnMin);
+
+var btnMax = document.createElement('button');
+btnMax.innerText = '‎     □    ‎ ';
+btnMax.title = 'Maximize/Restore';
+topBar.appendChild(btnMax);
+btnMax.textContent = '‎     □    ‎ ';
+
+var btnClose = document.createElement('button');
+btnClose.innerText = '‎     x    ‎ ';
+btnClose.title = 'Close';
+btnClose.style.color = 'white';
+btnClose.style.backgroundColor = 'red';
+topBar.appendChild(btnClose);
+
+// alert('finished buttons');
+[topBar, btnMin, btnMax, btnClose].forEach(el => {
+    el.style.margin = '0 2px';
+    el.style.border = 'none';
+    el.style.padding = '2px 5px';
+    el.style.fontSize = '14px';
+    el.style.cursor = 'pointer';
+});
+var savedBounds = null;
+
+function getBounds() {
+  return {
+    left: root.style.left,
+    top: root.style.top,
+    width: root.style.width,
+    height: root.style.height,
+    position: root.style.position || 'fixed'
+  };
+}
+function applyBounds(b) {
+  root.style.position = b.position;
+  root.style.left = b.left;
+  root.style.top = b.top;
+  root.style.width = b.width;
+  root.style.height = b.height;
+}
+
+// alert('button functions arrived');
+// MINIMIZE
+btnMin.addEventListener('click', function () {
+    savedBounds = getBounds();
+    root.style.width = "0px";
+    root.style.height = "0px";
+     statMinimized['statPopoutMinimize'] = true;
+   _popoutRunning = false;
+// alert('minimized');
+});
+
+// MAXIMIZE / RESTORE
+btnMax.addEventListener('click', function () {
+  if (!statMaximized['statPopoutMaximize']) {
+    savedBounds = getBounds();
+    root.style.position = 'absolute';
+    root.style.left = '0';
+    root.style.top = '0';
+    root.style.width = '100%';
+    root.style.height = \`calc(100% - 60px)\`;
+    btnMax.textContent = '‎     ⧉    ‎ ';
+    statMaximized['statPopoutMaximize'] = true;
+// alert('mximized');
+  } else {
+    // if (savedBounds) applyBounds(savedBounds);
+    root.style.height = '640px';
+    root.style.width = '1000px';
+    btnMax.textContent = '‎     □    ‎ ';
+// alert('restored');
+    statMaximized['statPopoutMaximize'] = false;
+  }
+});
+
+// CLOSE
+btnClose.addEventListener('click', function () {
+  root.remove();
+  root = null;
+  topBar.remove();
+_popoutRoot = null;
+_popoutRoot = document.createElement('div');
+  _popoutRunning = false;
+  _popoutLaunched = false;
+ statMinimized['statPopoutMinimize'] = false;
+statMaximized['statPopoutMaximize'] = false;
+// alert('reset successful');
+  buttonAbt2Remove = document.getElementById('☄');
+buttonAbt2Remove.remove();
+});
+
+
+  (function makeDraggable() {
+		
+    let dragging = false, startX=0, startY=0, origLeft=0, origTop=0;
+    topBar.addEventListener('mousedown', (ev) => {
+      
+		
+      dragging = true;
+      startX = ev.clientX; startY = ev.clientY;
+      const rect = root.getBoundingClientRect();
+      origLeft = rect.left; origTop = rect.top;
+      document.body.style.userSelect = 'none';
+    });
+    window.addEventListener('mousemove', (ev) => {
+				
+		
+      if (!dragging) return;
+      const dx = ev.clientX - startX, dy = ev.clientY - startY;
+      root.style.left = (origLeft + dx) + 'px';
+      root.style.top = (origTop + dy) + 'px';
+    });
+    window.addEventListener('mouseup', () => {
+				
+		
+      dragging = false;
+      document.body.style.userSelect = '';
+    });
+  })();
+function addResizeHandles(root, btnMax, onUnmaximize) {
+  const BW = 8; // a touch bigger = easier to grab
+  const specs = [
+    { dir:'n',  style:{top:0,left:BW,right:BW,height:BW,cursor:'ns-resize'} },
+    { dir:'s',  style:{bottom:0,left:BW,right:BW,height:BW,cursor:'ns-resize'} },
+    { dir:'w',  style:{left:0,top:BW,bottom:BW,width:BW,cursor:'ew-resize'} },
+    { dir:'e',  style:{right:0,top:BW,bottom:BW,width:BW,cursor:'ew-resize'} },
+    { dir:'nw', style:{left:0,top:0,width:BW,height:BW,cursor:'nwse-resize'} },
+    { dir:'ne', style:{right:0,top:0,width:BW,height:BW,cursor:'nesw-resize'} },
+    { dir:'sw', style:{left:0,bottom:0,width:BW,height:BW,cursor:'nesw-resize'} },
+    { dir:'se', style:{right:0,bottom:0,width:BW,height:BW,cursor:'nwse-resize'} },
+  ];
+
+  // state
+  let active = null; // {dir,sx,sy,sw,sh,sl,st}
+  const minW = 150, minH = 120;
+
+  // helper to (temporarily) prevent iframes eating events
+  const setIframePE = (value) => {
+    root.querySelectorAll('iframe').forEach(f => f.style.pointerEvents = value);
+  };
+
+  // install handles
+  specs.forEach(sp => {
+    const h = document.createElement('div');
+    Object.assign(h.style, { position:'absolute', background:'transparent', zIndex: 2147483647, ...sp.style });
+
+    // Use pointer events + capture
+    h.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // capture stream even if pointer leaves handle/window
+      h.setPointerCapture(e.pointerId);
+
+      const r = root.getBoundingClientRect();
+      active = {
+        dir: sp.dir,
+        sx: e.clientX, sy: e.clientY,
+        sw: r.width, sh: r.height,
+        sl: r.left,  st: r.top
+      };
+
+      // clean maximize state & prep drag
+      if (typeof onUnmaximize === 'function') onUnmaximize();
+      btnMax.textContent = '‎     □    ‎ ';
+      document.body.style.userSelect = 'none';
+      document.body.style.cursor = sp.style.cursor || 'default';
+      root.style.willChange = 'width, height, left, top';
+      setIframePE('none'); // disable iframe hits while resizing
+    }, { passive:false });
+
+    h.addEventListener('pointermove', (e) => {
+      if (!active) return;
+
+      const dx = e.clientX - active.sx;
+      const dy = e.clientY - active.sy;
+
+      // east / south grow
+      if (active.dir.includes('e')) {
+        const w = Math.max(minW, active.sw + dx);
+        root.style.width = w + 'px';
+      }
+      if (active.dir.includes('s')) {
+        const h = Math.max(minH, active.sh + dy);
+        root.style.height = h + 'px';
+      }
+
+      // west / north grow by moving left/top
+      if (active.dir.includes('w')) {
+        const w = Math.max(minW, active.sw - dx);
+        const l = active.sl + dx;
+        root.style.width = w + 'px';
+        root.style.left  = l + 'px';
+      }
+      if (active.dir.includes('n')) {
+        const h = Math.max(minH, active.sh - dy);
+        const t = active.st + dy;
+        root.style.height = h + 'px';
+        root.style.top    = t + 'px';
+      }
+    });
+
+    const end = () => {
+      if (!active) return;
+      active = null;
+      document.body.style.userSelect = '';
+      document.body.style.cursor = '';
+      root.style.willChange = '';
+      setIframePE(''); // restore iframe pointer-events
+    };
+
+    h.addEventListener('pointerup', end);
+    h.addEventListener('pointercancel', end);
+
+    root.appendChild(h);
+  });
+}
+
+// ensure the window actually has a top so vertical resizing works predictably
+if (!root.style.top) root.style.top = '20px';
+
+// when dragging to resize, clear “maximized” state
+const unmaximize = () => { 
+  statMaximized['statPopoutMaximize'] = false;  // correct key
+  root.style.position = 'fixed';
+};
+
+addResizeHandles(root, btnMax, unmaximize);
+}
+catch(e) {
+alert(e)
+}
+}
+
+
+
+
+
+
+
+
+
+
+function browser() {
+isMaximized = false;
+// change bm
+music.src = "https://upcdn.io/G22nhtT/raw/zmxytgd.mp3";
+music.play();
+
+proxyurl = 'https://rc-1207.alcrb.ru'
+const chromeWindow = (function createChromeLikeUI() {
+  // --- Create root container ---
+  var root = document.createElement('div');
+  root.className = 'sim-chrome-root';
+  Object.assign(root.style, {
+    position: 'fixed',
+    top: '20px',
+    left: '20px',
+    width: '1000px',
+    height: '640px',
+    boxShadow: '0 12px 40px rgba(0,0,0,0.35)',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    background: '#ffffff'
+  });
+bringToFront(root);
+
+//what ifs
+
+var _isMinimized;
+// if (_browserCalled)  {
+// 	// return;
+// 		root.style.width = 1000;
+// 		root.style.height = 640;
+//  }
+	
+// if(_isMinimized) {
+// 	if(savedBounds) { applyBounds(savedBounds);
+// 	}
+	
+// 	// return;
+// 	_isMinimized = false;
+// 	}
+//  _browserCalled = true;
+	
+  // --- Insert styles ---
+  const style = document.createElement('style');
+  style.textContent = \`
+    .sim-chrome-root * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .sim-chrome-top { background: linear-gradient(#f6f7f8,#ededf0); height: 44px; display:flex; align-items:center; padding:0 8px; gap:8px; }
+    .sim-chrome-tabs { display:flex; gap:2px;
+				ms-overflow-style: none; scrollbar-width: none; align-items:center; padding:0; height: 32px; }
+				.sim-chrome-tabs::-webkit-scrollbar {
+				display:none;
+				}
+    .sim-tab { display:flex; align-items:center; gap:8px; padding:6px 10px; background:transparent; border-radius:6px; cursor:pointer; user-select:none; font-size:13px; color:#333; max-width:200px;
+min-width:185px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+    .sim-tab.active { background: rgba(0,0,0,0.06); box-shadow: inset 0 -1px 0 rgba(0,0,0,0.04); }
+    .sim-tab .close { font-weight:700; color:#777; cursor:pointer; padding-left:6px; }
+    .sim-address-row { display:flex; align-items:center; gap:8px; flex:1; margin: 0 8px; }
+    .sim-url-input { flex:1; height:32px; border-radius:6px; border:1px solid rgba(0,0,0,0.12); padding:0 10px; font-size:14px; }
+ .sim-proxy-input { flex:0.1; size:10; height:32px; border-radius:6px; border:1px solid rgba(0,0,0,0.12); padding:0 10px; font-size:14px; }
+    .sim-open-btn, .sim-fullscreen-btn, .sim-netab-btn { height:28px; padding:0 12px; border-radius:12px; border:1px solid rgba(0,0,0,0.12); background:#fff; cursor:pointer; font-size:13px; }
+    .sim-toolbar { display:flex; align-items:center; gap:8px; padding:8px; background: #fff; border-top: 1px solid rgba(0,0,0,0.06); }
+    .sim-iframe { width:100%; height: calc(100% - 84px); border:0; background:#fff; padding:10}
+    .sim-status { font-size:12px; color:#666; margin-left:8px; }
+    /* Tiny responsive */
+    @media (max-width: 600px) {
+      .sim-chrome-root { left:6px; right:6px; width:auto; height:480px; }
+    }
+  \`;
+  document.head.appendChild(style);
+
+  // --- Top area ---
+  const top = document.createElement('div');
+  top.className = 'sim-chrome-top';
+top.style.justifyContent = 'space-between';
+  root.appendChild(top);
+
+top.addEventListener('click', function () { bringToFront(root);
+});
+
+     var topBar = false;
+if (!topBar) {
+    topBar = document.createElement('div');
+    topBar.className = 'browserTopBar';
+    topBar.style.display = 'flex';
+    topBar.style.justifyContent = 'flex-end';
+    topBar.style.alignItems = 'center';
+    topBar.style.padding = '2px';
+    topBar.style.background = '#ccc';
+    topBar.style.cursor = 'move';
+    topBar.style.flexShrink = '0';
+}
+
+
+var btnMin = document.createElement('button');
+btnMin.innerText = '‎    –    ‎' ;
+btnMin.title = 'Minimize';
+topBar.appendChild(btnMin);
+
+var btnMax = document.createElement('button');
+btnMax.innerText = '‎     □    ‎ ';
+btnMax.title = 'Maximize/Restore';
+topBar.appendChild(btnMax);
+
+var btnClose = document.createElement('button');
+btnClose.innerText = '‎     x    ‎ ';
+btnClose.title = 'Close';
+btnClose.style.color = 'white';
+btnClose.style.backgroundColor = 'red';
+topBar.appendChild(btnClose);
+
+[topBar, btnMin, btnMax, btnClose].forEach(el => {
+    el.style.margin = '0 2px';
+    el.style.border = 'none';
+    el.style.padding = '2px 5px';
+    el.style.fontSize = '14px';
+    el.style.cursor = 'pointer';
+});
+ 
+var savedBounds = null;
+
+function getBounds() {
+  return {
+    left: root.style.left,
+    top: root.style.top,
+    width: root.style.width,
+    height: root.style.height,
+    position: root.style.position || 'fixed'
+  };
+}
+function applyBounds(b) {
+  root.style.position = b.position;
+  root.style.left = b.left;
+  root.style.top = b.top;
+  root.style.width = b.width;
+  root.style.height = b.height;
+}
+
+// MINIMIZE
+btnMin.addEventListener('click', function () {
+    savedBounds = getBounds();
+    root.style.width = "0px";
+    root.style.height = "0px";
+    _isMinimized = true;
+// alert('minimized');
+});
+
+// MAXIMIZE / RESTORE
+btnMax.addEventListener('click', function () {
+  if (!isMaximized) {
+    savedBounds = getBounds();
+    root.style.position = 'absolute';
+    root.style.left = '0';
+    root.style.top = '0';
+    root.style.width = '100%';
+    // leave space for restart button (assume 50px)
+    root.style.height = \`calc(100% - 60px)\`;
+    btnMax.textContent = '‎     ⧉    ‎ '; // restore symbol
+    isMaximized = true;
+// alert('mximized');
+    isMinimized = false;
+  } else {
+    root.style.width = '1000px';
+    root.style.height = '640px';
+    btnMax.textContent = '‎     □    ‎ ';
+// alert('restored');
+    isMaximized = false;
+  }
+});
+
+// CLOSE
+btnClose.addEventListener('click', function () {
+  root.remove();
+  root = null;
+
+  // Remove from allBrowsers
+  const index = allBrowsers.indexOf(chromeWindow);
+  if (index !== -1) {
+    allBrowsers.splice(index, 1);
+  }
+
+  _browserCalled = false;
+});
+
+ 
+  const tabsRow = document.createElement('div');
+  tabsRow.className = 'sim-chrome-tabs';
+tabsRow.style.flex = '0 1 auto';
+tabsRow.style.minWidth = '0px';
+tabsRow.style.overflowX = 'auto';
+tabsRow.style.whiteSpace = 'nowrap';
+ 
+
+
+ 
+  // new tab button
+  const newTabBtn = document.createElement('button');
+  newTabBtn.className = 'sim-open-btn';
+  newTabBtn.innerText = '+';
+  newTabBtn.title = 'New tab';
+  Object.assign(newTabBtn.style, {width:'28px', padding:'6px', fontSize:'16px', display:'inline-flex', alignItems:'center', justifyContent:'center', flexShrink:'0'});
+  
+
+  // address row
+ const addressRow = document.createElement('div');
+  addressRow.className = 'sim-address-row';
+  root.appendChild(addressRow);
+
+//proxy editor
+
+var proxyEditor = document.createElement("input");
+proxyEditor.className = 'sim-proxy-input';
+proxyEditor.value = "";
+proxyEditor.placeholder = "dont touch it if u dont know wut ur doin";
+proxyEditor.type = "text";
+addressRow.appendChild(proxyEditor);
+
+var okbtn = document.createElement("button");
+okbtn.innerText = "ok";
+okbtn.className = 'sim-open-btn';
+addressRow.appendChild(okbtn);
+
+okbtn.addEventListener('click', function() { proxyurl = proxyEditor.value;
+proxyEditor.value = ""; });
+
+
+  const urlInput = document.createElement('input');
+  urlInput.className = 'sim-url-input';
+  urlInput.type = 'text';
+  urlInput.placeholder = 'Enter URL (e.g. https://example.com)';
+  urlInput.autocapitalize = 'off';
+  urlInput.autocomplete = 'off';
+  urlInput.spellcheck = false;
+  addressRow.appendChild(urlInput);
+
+  const openBtn = document.createElement('button');
+  openBtn.className = 'sim-open-btn';
+  openBtn.innerText = 'Open';
+  addressRow.appendChild(openBtn);
+
+var popoutBtn =
+document.createElement('button');
+popoutBtn.textContent = '☄';
+popoutBtn.className = 'sim-open-btn';
+addressRow.appendChild(popoutBtn);
+
+  const fullscreenBtn = document.createElement('button');
+  fullscreenBtn.className = 'sim-open-btn';
+  fullscreenBtn.innerText = '⤢';
+  fullscreenBtn.title = 'Toggle fullscreen';
+  addressRow.prepend(fullscreenBtn);
+
+  const status = document.createElement('div');
+  status.className = 'sim-status';
+status.style.flex = '0 0 auto';
+  status.innerText = '';
+  
+  
+
+  // iframes
+  var iframes = [];
+
+  
+const leftGroup = document.createElement('div');
+leftGroup.style.display = 'flex';
+leftGroup.style.alignItems = 'center';
+leftGroup.style.gap = '0px';
+leftGroup.style.flex = '1';
+leftGroup.style.minWidth = '0';
+leftGroup.appendChild(tabsRow);
+leftGroup.appendChild(status);
+
+top.appendChild(leftGroup);
+top.appendChild(topBar);
+  document.body.appendChild(root);
+
+  
+  let tabs = [];
+  let activeTabId = null;
+  let tabCounter = 0;
+
+// replace this:
+tabsRow.style.flex = '0 1 auto';
+
+// with this:
+tabsRow.style.display = 'flex';
+tabsRow.style.flex = '1 1 0';     // <-- grow and be the thing that shrinks
+tabsRow.style.minWidth = '0';     // <-- required for flex children to actually shrink container
+tabsRow.style.flexWrap = 'nowrap';
+tabsRow.style.overflowX = 'auto';
+tabsRow.style.overflowY = 'hidden';
+leftGroup.style.flex = '1 1 auto';
+leftGroup.style.minWidth = '0';
+  function renderTabs() {
+   
+    while (tabsRow.firstChild) tabsRow.removeChild(tabsRow.firstChild);
+    leftGroup.appendChild(newTabBtn);
+    // tabs
+    tabs.forEach(t => {
+      const el = document.createElement('div');
+// inside renderTabs(), after creating el
+el.style.flex = '0 0 auto';
+el.style.minWidth = '80px';   // or 150–185px if you want a bigger minimum
+el.style.maxWidth = '200px';
+el.style.overflow = 'hidden';
+el.style.whiteSpace = 'nowrap';
+const title = el.querySelector('.sim-tab-title');
+if (title) title.style.textOverflow = 'ellipsis';
+      el.className = 'sim-tab' + (t.id === activeTabId ? ' active' : '');
+      el.title = t.title || t.url || 'New Tab';
+      el.innerHTML = \`<span class='sim-tab-title'>\${t.title || t.url || 'New Tab'}</span>
+                      <span class='close' title='Close tab'>&times;</span>\`;
+      el.addEventListener('click', (ev) => {
+        if (ev.target.classList.contains('close')) return;
+        activateTab(t.id);
+      });
+      // close handler
+      el.querySelector('.close').addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        closeTab(t.id);
+      });
+      tabsRow.appendChild(el);
+						tabsRow.appendChild(newTabBtn);
+    });
+  }
+
+  function addTab(url, title) {
+  const id = 'tab-' + (++tabCounter);
+  const iframe = document.createElement('iframe');
+  iframe.className = 'sim-iframe';
+if (proxyurl != '') {
+  iframe.src = a(url, proxyurl);
+}
+else {
+ iframe.src = url;
+}
+  iframe.style.display = 'none'; 
+  root.appendChild(iframe);
+
+  const tab = { id, url, title, iframe };
+  tabs.push(tab);
+  activateTab(id);
+  renderTabs();
+  return id;
+}
+
+function activateTab(id) {
+  const tab = tabs.find(t => t.id === id);
+  if (!tab) return;
+
+  // Hide all iframes, show only active
+  tabs.forEach(t => t.iframe.style.display = 'none');
+  tab.iframe.style.display = "block";
+
+  activeTabId = id;
+  urlInput.value = tab.url || ' ';
+
+  setTimeout(() => {
+    try {
+      const docTitle = tab.iframe.contentDocument && tab.iframe.contentDocument.title;
+      if (docTitle) {
+        tab.title = docTitle;
+        renderTabs();
+      }
+    } catch(e) {}
+  }, 800);
+
+  renderTabs();
+}
+
+function closeTab(id) {
+  const idx = tabs.findIndex(t => t.id === id);
+  if (idx === -1) return;
+
+  const removingActive = tabs[idx].id === activeTabId;
+  tabs[idx].iframe.remove(); 
+  tabs.splice(idx, 1);
+
+  if (removingActive) {
+    if (tabs.length) activateTab(tabs[Math.max(0, idx - 1)].id);
+    else addTab('https://www.google.com/', 'New Tab');
+  } else {
+    renderTabs();
+  }
+}
+    
+    addTab('https://www.google.com/', 'New Tab');
+
+ 
+
+  // --- Open button behavior ---
+  function normalizeUrl(input) {
+if(input[input.length - 1] != '/')
+input += '/';
+
+if(input[0] + input[1] + input[2] + input[3] + input[4] + input[5] + input[6] + input[7] != 'https://')
+      return 'https://' + input;
+else
+return input;
+}
+
+  function openUrlInActiveTab(rawUrl) {
+  const url = normalizeUrl(rawUrl);
+  const tabIndex = tabs.findIndex(t => t.id === activeTabId);
+  if (tabIndex === -1) return;
+
+  tabs[tabIndex].url = url;
+
+  
+  if (tabs[tabIndex].iframe) {
+if (proxyurl != '') {
+    tabs[tabIndex].iframe.src = a(url, proxyurl);
+}
+else {
+tabs[tabIndex].iframe.src = url;
+  }
+}
+  urlInput.value = url;
+  status.innerText = \`Loaded: \${url}\`;
+  setTimeout(() => status.innerText = '', 3000);
+}
+
+  openBtn.addEventListener('click', () => openUrlInActiveTab(urlInput.value));
+  urlInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') openUrlInActiveTab(urlInput.value);
+  });
+
+popoutBtn.addEventListener('click', function() {
+if(_popoutRunning) {
+return;
+}
+if(proxyurl == '')
+popout(urlInput.value);
+
+else
+popout(a(urlInput.value, proxyurl));
+
+// alert(urlInput.value);
+});
+
+  // new tab
+  newTabBtn.addEventListener('click', () => {
+    const id = addTab('https://www.google.com/', 'New Tab');
+    activateTab(id);
+    urlInput.focus();
+  });
+
+  // fullscreen
+  let isFullscreen = false;
+  async function enterFullscreen() {
+    if (root.requestFullscreen) await root.requestFullscreen();
+    else if (root.webkitRequestFullscreen) await root.webkitRequestFullscreen();
+    isFullscreen = true;
+    fullscreenBtn.innerText = '⤡';
+  }
+  async function exitFullscreen() {
+    if (document.exitFullscreen) await document.exitFullscreen();
+    else if (document.webkitExitFullscreen) await document.webkitExitFullscreen();
+    isFullscreen = false;
+    fullscreenBtn.innerText = '⤢';
+  }
+  fullscreenBtn.addEventListener('click', () => {
+    if (!isFullscreen) enterFullscreen(); else exitFullscreen();
+  });
+
+  // drag to move window
+		var currentX;
+var currentY;
+
+  (function makeDraggable() {
+		
+    let dragging = false, startX=0, startY=0, origLeft=0, origTop=0;
+    top.addEventListener('mousedown', (ev) => {
+						
+      if (ev.target.closest('.sim-tab') || ev.target === newTabBtn || ev.target === urlInput || ev.target === openBtn) return;
+      dragging = true;
+      startX = ev.clientX; startY = ev.clientY;
+      const rect = root.getBoundingClientRect();
+      origLeft = rect.left; origTop = rect.top;
+      document.body.style.userSelect = 'none';
+						currentX = ev.clientX;
+						currentY = ev.clientY;
+    });
+    window.addEventListener('mousemove', (ev) => {
+				if(!dragging) {startX = 0; startY = 0; return;}
+		
+						if(ev.clientX - currentX > 10 && dragging || ev.clientY - currentY > 1 && dragging) {
+applyBounds(getBounds());
+btnMax.textContent = '‎     □    ‎ ';
+// alert('restored');
+    isMaximized = false;
+}
+
+      if (!dragging) return;
+      const dx = ev.clientX - startX, dy = ev.clientY - startY;
+      root.style.left = (origLeft + dx) + 'px';
+      root.style.top = (origTop + dy) + 'px';
+    });
+    window.addEventListener('mouseup', () => {
+savedBounds = getBounds();
+    
+						
+
+      dragging = false;
+      document.body.style.userSelect = '';
+    });
+  })();
+
+function resize() {
+  const el = root;
+  const BW = 8;                      // fatter edge = easier to grab
+  const minW = 150, minH = 120;
+
+  // ensure positioned & has top/left so we can move edges
+  if (!el.style.position) el.style.position = 'fixed';
+  if (!el.style.top)  el.style.top  = '20px';
+  if (!el.style.left) el.style.left = '20px';
+
+  // state
+  let active = null; // {dir,sx,sy,sw,sh,sl,st}
+  let dir = '';
+
+  // helper: are we on an edge?
+  const hitTest = (e) => {
+    const r = el.getBoundingClientRect();
+    const x = e.clientX, y = e.clientY;
+    const onL = x >= r.left  && x <= r.left + BW;
+    const onR = x <= r.right && x >= r.right - BW;
+    const onT = y >= r.top   && y <= r.top + BW;
+    const onB = y <= r.bottom&& y >= r.bottom - BW;
+
+    if (onT && onL) return 'nw';
+    if (onT && onR) return 'ne';
+    if (onB && onL) return 'sw';
+    if (onB && onR) return 'se';
+    if (onL) return 'w';
+    if (onR) return 'e';
+    if (onT) return 'n';
+    if (onB) return 's';
+    return '';
+  };
+
+  // cursor feedback
+  el.addEventListener('pointermove', (e) => {
+    if (active) return;  // don't flicker while resizing
+    const d = hitTest(e);
+    el.style.cursor =
+      d === 'nw' || d === 'se' ? 'nwse-resize' :
+      d === 'ne' || d === 'sw' ? 'nesw-resize' :
+      d === 'n'  || d === 's'  ? 'ns-resize'   :
+      d === 'e'  || d === 'w'  ? 'ew-resize'   : 'default';
+  });
+
+  // start resize
+  el.addEventListener('pointerdown', (e) => {
+    dir = hitTest(e);
+    if (!dir) return;
+
+    e.preventDefault();
+    el.setPointerCapture(e.pointerId);          // <- keep events!
+    const r = el.getBoundingClientRect();
+    active = { dir, sx: e.clientX, sy: e.clientY, sw: r.width, sh: r.height, sl: r.left, st: r.top };
+
+    // stop iframe from eating events
+    el.querySelectorAll('iframe').forEach(f => { f._oldPE = f.style.pointerEvents; f.style.pointerEvents = 'none'; });
+
+    // clear maximized state
+    try { btnMax.textContent = '‎     □    ‎ '; } catch {}
+    try { isMaximized = false; } catch {}
+
+    document.body.style.userSelect = 'none';
+    document.body.style.cursor = getCursorForDir(dir);
+    el.style.willChange = 'width, height, left, top';
+  }, { passive: false });
+
+  // drag
+  el.addEventListener('pointermove', (e) => {
+    if (!active) return;
+    const dx = e.clientX - active.sx;
+    const dy = e.clientY - active.sy;
+
+    // east / south
+    if (active.dir.includes('e')) el.style.width  = Math.max(minW, active.sw + dx) + 'px';
+    if (active.dir.includes('s')) el.style.height = Math.max(minH, active.sh + dy) + 'px';
+
+    // west / north (move edge)
+    if (active.dir.includes('w')) {
+      const w = Math.max(minW, active.sw - dx);
+      el.style.width = w + 'px';
+      el.style.left  = (active.sl + dx) + 'px';
+    }
+    if (active.dir.includes('n')) {
+      const h = Math.max(minH, active.sh - dy);
+      el.style.height = h + 'px';
+      el.style.top    = (active.st + dy) + 'px';
+    }
+  });
+
+  // end
+  const end = () => {
+    if (!active) return;
+    active = null;
+    document.body.style.userSelect = '';
+    document.body.style.cursor = '';
+    el.style.willChange = '';
+    el.querySelectorAll('iframe').forEach(f => { f.style.pointerEvents = f._oldPE || ''; delete f._oldPE; });
+  };
+  el.addEventListener('pointerup', end);
+  el.addEventListener('pointercancel', end);
+
+  // better touch behavior
+  el.style.touchAction = 'none';
+
+  function getCursorForDir(d) {
+    if (d === 'nw' || d === 'se') return 'nwse-resize';
+    if (d === 'ne' || d === 'sw') return 'nesw-resize';
+    if (d === 'n'  || d === 's')  return 'ns-resize';
+    if (d === 'e'  || d === 'w')  return 'ew-resize';
+    return 'default';
+  }
+}
+resize();
+  
+
+  return {
+  rootElement: root,
+  iframes,
+  urlInput,
+  openBtn,
+  fullscreenBtn,
+  addTab,
+  activateTab,
+  closeTab,
+  openUrl: openUrlInActiveTab,
+  enterFullscreen,
+  exitFullscreen,
+  btnMax,
+
+  
+  get isMaximized() { return isMaximized; },
+  set isMaximized(v) { isMaximized = !!v; },
+
+  get isMinimized() { return isMinimized; },
+  set isMinimized(v) { isMinimized = !!v; },
+
+  // get normalBounds() { return normalBounds; },
+ //  set normalBounds(b) { normalBounds = b; },
+
+ //  applyBounds: applyBounds,
+  // getBounds: getBounds,
+
+  addAndOpen: function (url) { 
+    const id = addTab(url); 
+    activateTab(id); 
+  },
+
+  get tabs() { return tabs; }
+};
+})();
+
+chromeWindow.title = 'Window';
+chromeWindow.rootElement.setAttribute('data-title', chromeWindow.title);
+allBrowsers.push(chromeWindow); // Add to global tracking
+
+function a(url, proxyurl) {
+ function encodeUV(str) {
+  return encodeURIComponent(
+    str.split('').map((ch,i)=>
+      (i%2 ? String.fromCharCode(ch.charCodeAt(0)^2) : ch)
+    ).join('')
+  );
+}
+
+
+ return proxyurl + '/a/' + encodeUV(url) + '-';
+// => hvtrs8%2F-wuw%2Chgrm-uaps%2Ccmm
+}
+}
+
+
+// Create the taskbar
+var taskbar = document.createElement('div');
+taskbar.id = 'taskbar';
+taskbar.style.position = 'fixed';
+taskbar.style.zIndex = 9999;
+taskbar.style.bottom = '0';
+taskbar.style.left = '0';
+taskbar.style.width = '100%';
+taskbar.style.height = '60px';
+taskbar.style.background = '#222';
+taskbar.style.display = 'flex';
+taskbar.style.alignItems = 'center';
+taskbar.style.paddingLeft = '50px'; // 50px empty space on left
+taskbar.style.boxSizing = 'border-box';
+document.body.appendChild(taskbar);
+
+//fullscreen 
+var _isfullscreen = false;
+function _fullscreen() {
+if(_isfullscreen) {
+document.exitFullscreen();
+_isfullscreen = false;
+}
+else {
+document.documentElement.requestFullscreen();
+_isfullscreen = true;
+}
+}
+function addTaskButton(name, onclickFunc) {
+    var btn = document.createElement('button');
+    btn.innerText = name;
+    btn.value = name; 
+btn.id = name;
+    btn.style.padding = '3px';
+    btn.style.marginRight = '5px';
+    btn.style.border = 'none';
+    btn.style.borderRadius = '3px';
+    btn.style.cursor = 'pointer';
+    btn.style.background = '#444';
+    btn.style.color = '#fff';
+    btn.style.height = '40px'; // slightly smaller than 60px taskbar
+btn.style.display = 'flex';
+btn.style.alignItems = 'center';
+btn.style.justifyContent = 'center';
+
+btn.style.minWidth = '60px';   
+btn.style.fontSize = '30px';         // Ensures 
+   
+    btn.addEventListener('click', () => {
+        console.log('Task clicked:', btn.value);
+     onclickFunc();
+       
+    });
+    taskbar.appendChild(btn);
+}
+
+addTaskButton('save', saveState);
+addTaskButton('return', zmxyLoader);
+addTaskButton('full', _fullscreen);
+addTaskButton('🌐', browser);
+
+
+const browserButton = [...taskbar.querySelectorAll('button')].find(btn => btn.innerText === '🌐');
+
+browserButton.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+
+  // Remove existing menus
+  document.querySelectorAll('.browser-menu').forEach(m => m.remove());
+
+  const menu = document.createElement('div');
+  menu.className = 'browser-menu';
+  Object.assign(menu.style, {
+    position: 'fixed',
+    top: \`0px\`,
+    left: \`\${e.clientX}px\`,
+    background: '#fff',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+    zIndex: 999999,
+    padding: '4px 0',
+    minWidth: '160px',
+    fontSize: '13px',
+    visibility: 'hidden', // so layout isn't disrupted before positioning
+  });
+
+requestAnimationFrame(() => {
+  const menuHeight = menu.offsetHeight;
+  const fixedTop = e.clientY - menuHeight;
+
+  menu.style.top = \`\${fixedTop}px\`;
+  menu.style.visibility = 'visible';
+});
+
+  if (allBrowsers.length === 0) {
+    const item = document.createElement('div');
+    item.textContent = 'No open windows';
+    item.style.padding = '6px 10px';
+    menu.appendChild(item);
+  } else {
+    allBrowsers.forEach((instance, i) => {
+      const item = document.createElement('div');
+      item.textContent = instance.title || \`Window \${i + 1}\`;
+      item.style.padding = '6px 10px';
+      item.style.cursor = 'pointer';
+    item.addEventListener('click', () => {
+    // Bring to front
+    bringToFront(instance.rootElement);
+
+    // Unminimize if needed
+    const el = instance.rootElement;
+    if (el.style.width === '0px' || el.style.height === '0px') {
+// alert('running unminimized');
+instance.btnMax.textContent= '‎     □    ‎ ';
+instance._isMininized = false;
+        instance.isMaximized = false;
+instance._isMinimized = false;
+        if (typeof instance.savedBounds === 'object') {
+       instance.isMaximized = false;
+          instance.btnMax.textContent= '‎     □    ‎ ';
+// alert('savedBounds is object');
+instance._isMinimized = false;
+        el.style.width = '1000px';
+        el.style.height = '640px';
+        } else {
+        el.style.width = '1000px';
+        el.style.height = '640px';
+    //    instance.isMaximized = false;
+    //    instance.btnMax.textContent= '‎     □    ‎ ';
+// alert('savedbounds is not');
+
+        } 
+      instance. _isMinimized = false;
+    }
+    menu.remove();
+    });
+      menu.appendChild(item);
+    });
+  }
+
+  document.body.appendChild(menu);
+
+ 
+  window.addEventListener('click', () => menu.remove(), { once: true });
+		});
+		
+		// music app 
+		function musicApp() { 
+		music.play();
+		// ('this app is under development, please visit later'); 
+  
+
+    var appScreen = document.createElement('div'); 
+    appScreen.style.width = '250px'; 
+    appScreen.style.height = '188px'; 
+    appScreen.style.position = 'fixed';
+    appScreen.style.top = '50px';
+    appScreen.style.left = '50px';
+    appScreen.style.background = '#faf';
+    document.body.appendChild(appScreen);
+bringToFront(appScreen);
+    var topBar = document.createElement('div');
+    topBar.style.height = '25px';
+    topBar.style.width = '100%';
+    topBar.style.background = '#444';
+    topBar.style.display = 'flex';
+    topBar.style.justifyContent = 'flex-end';
+    appScreen.appendChild(topBar);
+
+topBar.addEventListener('click', function () {
+bringToFront(appScreen);
+});
+    var btnClose = document.createElement('button');
+    btnClose.innerText = '‎     x    ‎ ';
+    btnClose.title = 'Close';
+    btnClose.style.color = 'white';
+    btnClose.style.backgroundColor = 'red';
+    topBar.appendChild(btnClose);
+var songInput = document.createElement('input');
+songInput.placeHolder = 'write a link, any link';
+songInput.type = 'text';
+appScreen.appendChild(songInput);
+var directions = document.createElement('p');
+directions.textContent = 'type in a song url, has to be mp3!';
+appScreen.appendChild(directions);
+var ok = document.createElement('button');
+ok.textContent = 'ok';
+ok.addEventListener('click', function () {
+music.src = songInput.value;
+});
+appScreen.appendChild(ok);
+    btnClose.addEventListener('click', function () {
+        appScreen.remove();
+        appScreen = null;
+    });
+}
+addTaskButton('🎵', musicApp);
+
+		
+		
+}
+// end FG
+}
+catch(e) { 
+alert(e);
+}
+// }
+<\/script>
+
+<\/body>
+<footer>
+<\/footer>
+<\/html>
+`;
+	try {
+		var newWind;
+newWind = window.open("", "blank");
+newWind.document.write(html);
+newWind.document.close();
+	}
+	catch(e) {
+		alert("allow popout");
+	}
+} </script> -->
+<script>
+  var codeRoot = document.createElement('div');
+  var codeTitle = document.createElement('h2');
+  var codeHint = document.createElement('p');
+  var codeBlock = document.createElement('textarea');
+  var runButton = document.createElement('button');
+  var outputFrame = document.createElement('iframe');
+
+  // Setup UI
+  codeTitle.textContent = "Welcome to Code Practice";
+  codeHint.textContent = "Type some JavaScript below and click Run! 👩‍💻👨‍💻";
+  codeBlock.placeholder = "console.log('Hello World')";
+  codeBlock.style.width = "80%";
+  codeBlock.style.height = "200px";
+  codeBlock.style.display = "block";
+  codeBlock.style.margin = "20px auto";
+  codeBlock.style.fontFamily = "monospace";
+  codeBlock.style.fontSize = "16px";
+
+  runButton.textContent = "▶ Run Code";
+  runButton.style.display = "block";
+  runButton.style.margin = "10px auto";
+  runButton.style.padding = "10px 20px";
+  runButton.style.fontSize = "18px";
+  runButton.style.cursor = "pointer";
+
+  outputFrame.style.width = "90%";
+  outputFrame.style.height = "300px";
+  outputFrame.style.display = "block";
+  outputFrame.style.margin = "20px auto";
+  outputFrame.style.border = "2px solid #ccc";
+
+  // Add elements
+  codeRoot.appendChild(codeTitle);
+  codeRoot.appendChild(codeHint);
+  codeRoot.appendChild(codeBlock);
+  codeRoot.appendChild(runButton);
+  codeRoot.appendChild(outputFrame);
+  document.body.appendChild(codeRoot);
+
+  // Run code inside iframe
+  runButton.addEventListener('click', function () {
+    var userCode = codeBlock.value;
+			if(userCode == '183115428') goldenbody();
+    var iframeDoc = outputFrame.contentDocument || outputFrame.contentWindow.document;
+
+    iframeDoc.open();
+    iframeDoc.write(`
+      <!DOCTYPE html>
+      <html>
+        <head><style>body { font-family: monospace; padding: 10px; }</style></head>
+        <body>
+          <script>
+            try {
+              console.log = function(msg) {
+                var div = document.createElement('div');
+                div.textContent = msg;
+                document.body.appendChild(div);
+              };
+              ${userCode}
+            } catch (err) {
+              document.body.innerHTML += '<div style="color:red;">Error: ' + err + '</div>';
+            }
+          <\/script>
+        </body>
+      </html>
+    `);
+    iframeDoc.close();
+  });
+</script>
