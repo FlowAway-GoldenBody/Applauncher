@@ -10,7 +10,7 @@
 <script>
 // preprocess browser
 
-const URLstring = 'https://rc-1207.alcrb.ru/hvtrs8%2F-wuw%2Chgrm-uaps%2Ccmm';
+const URLstring = 'https://localhost:1337/scramjet/https://www.google.com';
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 async function process() {
@@ -590,7 +590,7 @@ isMaximized = false;
 music.src = "https://upcdn.io/G22nhtT/raw/zmxytgd.mp3";
 music.play();
 
-proxyurl = 'https://rc-1207.alcrb.ru'
+var proxyurl = 'https://localhost:1337';
 const chromeWindow = (function createChromeLikeUI() {
   // --- Create root container ---
   var root = document.createElement('div');
@@ -1248,7 +1248,7 @@ chromeWindow.rootElement.setAttribute('data-title', chromeWindow.title);
 allBrowsers.push(chromeWindow); // Add to global tracking
 
 function a(url, proxyurl) {
- function encodeUV(str) {
+ /* function encodeUV(str) {
   return encodeURIComponent(
     str.split('').map((ch,i)=>
       (i%2 ? String.fromCharCode(ch.charCodeAt(0)^2) : ch)
@@ -1260,6 +1260,11 @@ function a(url, proxyurl) {
  return proxyurl + '/a/' + encodeUV(url) + '-';
 // => hvtrs8%2F-wuw%2Chgrm-uaps%2Ccmm
 }
+*/
+
+
+	//New
+	return proxyurl + '/scramjet/' + url;
 }
 
 
